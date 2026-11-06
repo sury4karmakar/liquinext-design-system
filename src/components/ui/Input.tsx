@@ -1,12 +1,7 @@
 import type { ComponentProps, ReactNode } from "react";
 import { cn } from "@/lib/cn";
 import { useFieldControl } from "./Field";
-import {
-  fieldBase,
-  fieldBorder,
-  fieldSizes,
-  type FieldSize,
-} from "./field-styles";
+import { fieldBase, fieldBorder, fieldSizes, type FieldSize } from "./field-styles";
 
 export type InputProps = Omit<ComponentProps<"input">, "size"> & {
   invalid?: boolean;

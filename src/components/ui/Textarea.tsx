@@ -8,14 +8,7 @@ export type TextareaProps = ComponentProps<"textarea"> & {
   autoResize?: boolean;
 };
 
-export function Textarea({
-  invalid,
-  autoResize,
-  className,
-  id,
-  onInput,
-  ...props
-}: TextareaProps) {
+export function Textarea({ invalid, autoResize, className, id, onInput, ...props }: TextareaProps) {
   const f = useFieldControl({
     id,
     invalid,
